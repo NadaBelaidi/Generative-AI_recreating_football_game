@@ -5,11 +5,11 @@
 import json
 
 # Open the first JSON file for reading and load its contents into the variable 'match1'
-with open('/content/drive/MyDrive/footbar_usecase/match_1.json') as json_file:
+with open('/workspaces/Generative-AI_recreating_football_game/match_1.json') as json_file:
     match1 = json.load(json_file)
 
 # Open the second JSON file for reading and load its contents into the variable 'match2'
-with open('/content/drive/MyDrive/footbar_usecase/match_2.json') as json_file:
+with open('/workspaces/Generative-AI_recreating_football_game/match_1.json') as json_file:
     match2 = json.load(json_file)
 
 
@@ -68,16 +68,12 @@ le_name_mapping = dict(zip(le.classes_, le.transform(le.classes_)))
 print(le_name_mapping)
 
 
-for i in range(100,227):
-    df.drop(i, axis=1, inplace=True)
-
-
 
 
 # transform the column names type to string ( this is needed for the realtabformer)
 df.columns = df.columns.map(str)
 
-get_ipython().system('pip install realtabformer -q')
+#! pip install realtabformer -q
 
 from realtabformer import REaLTabFormer
 from realtabformer import rtf_validators as rtf_val
