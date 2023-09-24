@@ -16,3 +16,4 @@ If you want to use the trained model, run the **generate.py** script
 
 You can look at the **footbar_usecase.ipynb** file for the code and the aproach explained, and you can also find a sample of the genrated data in **sample.json**
 
+Here's the trained model if you want to download it and use it :  [link](https://drive.google.com/drive/folders/1-C-WPUgkU71mqgIw6OVDGbp3Hde_it2Z?usp=sharing)
