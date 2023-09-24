@@ -10,8 +10,9 @@ print("enter your saved realtabmodel path :")
 path=input()
 
 rtf_model= REaLTabFormer.load_from_dir(
-    path="/workspaces/Generative-AI_recreating_football_game/rtf_checkpoints")
-
+    path)
+# Create an instance of the ObservationValidator from realtabformer
+obs_validator = rtf_val.ObservationValidator()
 # Define a function named 'generate' that takes 'match_length' as a parameter
 def generate(match_length):
     # Convert 'match_length' from minutes to seconds
