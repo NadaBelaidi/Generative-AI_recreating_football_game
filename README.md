@@ -2,7 +2,7 @@
 
 On a terminal, start with installing the requirement:
 
-    ! pip install requirements.txt
+    ! pip install -r requirements.txt
 
 If you want to retrain the model, run the script **train.py** (the data files have to be in the same folder as the script):
 
