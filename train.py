@@ -4,16 +4,13 @@
 # Import the json module to work with JSON data
 import json
 
+print(" provide the path to the data")
+path=input()
 # Open the first JSON file for reading and load its contents into the variable 'match1'
-with open('/workspaces/Generative-AI_recreating_football_game/match_1.json') as json_file:
+with open(path) as json_file:
     match1 = json.load(json_file)
 
-# Open the second JSON file for reading and load its contents into the variable 'match2'
-with open('/workspaces/Generative-AI_recreating_football_game/match_1.json') as json_file:
-    match2 = json.load(json_file)
 
-
-# In[94]:
 
 
 # Import the pandas library and alias it as 'pd'
